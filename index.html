@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Shades Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Color Shade Generator</h1>
+        <form class="form" autocomplete="off">
+          <div class="input-text-container">
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="color name/hex/rgb"
+            />
+            <button type="submit" class="btn">Get Colors</button>
+          </div>
+          <div class="input-color-container">
+            <label for="color">color picker</label>
+            <input type="color" name="color" id="color" class="input-color" />
+          </div>
+        </form>
+        <button class="btn random-btn">Generate Random</button>
+      </header>
+
+      <main>
+        <!-- color shades goes here -->
+        <section class="colors-container"></section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Built by <span class="author">Williams Samuel</span>. Follow me on
+          <a href="https://twitter.com/williams_codes" target="_blank"
+            >Twitter</a
+          >
+          |
+          <a href="https://github.com/williamssam" target="_blank">Github</a>
+        </p>
+        <p>
+          Powered by
+          <a href="https://noeldelgado.github.io/values.js/" target="_blank"
+            >values.js</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/values.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
