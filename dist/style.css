@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #eee;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1450px;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.input-text-container {
+  background: #ffffff;
+  padding: 0.5rem 1.3rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+input[type='text'] {
+  all: unset;
+  border-bottom: 1px solid #1d1d1d;
+  padding: 0.3rem 0;
+}
+
+/* input[type="color"] */
+.input-color-container {
+  position: relative;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 40px;
+}
+
+.input-color {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  all: unset;
+  background: #292929;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  margin-left: 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 350ms ease-in-out;
+}
+
+.btn:hover {
+  background: black;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.random-btn {
+  padding: 0.3rem 1rem;
+}
+
+/* color shaded section */
+.colors-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem;
+}
+
+.color {
+  height: 150px;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.color-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+footer {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+footer a {
+  text-decoration: underline wavy;
+  color: currentColor;
+  transition: all 400ms ease-in-out;
+}
+
+footer a:hover {
+  color: #fc2929;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .form {
+    padding: 1rem;
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .input-text-container {
+    padding: 0.4rem 0.7rem;
+  }
+
+  .colors-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .color {
+    height: 120px;
+  }
+
+  .color-details p {
+    font-size: 0.8rem;
+  }
+  .color-details h2 {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 0.5rem;
+  }
+}
